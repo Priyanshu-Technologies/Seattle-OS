@@ -1,0 +1,9 @@
+{
+  "name": "seattle-os-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Seattle OS — an interactive desktop-inspired portfolio for Priyanshu Sharma.",
+  "scripts": {
+    "start": "python3 -m http.server 4173"
+  }
+}

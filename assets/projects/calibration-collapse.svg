@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-label="Calibration collapse: reliability diagram showing confidence exceeding accuracy">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#191424"/><stop offset="1" stop-color="#2b2038"/></linearGradient>
+    <radialGradient id="glow" cx=".8" cy=".12" r=".8"><stop offset="0" stop-color="#c58fd6" stop-opacity=".26"/><stop offset="1" stop-color="#c58fd6" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/><rect width="800" height="450" fill="url(#glow)"/>
+  <style>
+    .k{font:500 9px 'DM Mono',monospace;letter-spacing:.22em;fill:#b2a4bd}
+    .t{font:800 27px Manrope,system-ui,sans-serif;fill:#f7f1fa;letter-spacing:-.8px}
+    .s{font:400 11px Manrope,system-ui,sans-serif;fill:#b2a4bd}
+    .m{font:800 21px Manrope,system-ui,sans-serif;fill:#e2bcec}
+    .ml{font:500 8px 'DM Mono',monospace;letter-spacing:.14em;fill:#978aa2}
+    .bar{fill:#b98ccc;fill-opacity:.62}
+    .gap{fill:#e0839d;fill-opacity:.85}
+  </style>
+  <text class="k" x="40" y="46">SEATTLE OS / ML RESEARCH</text>
+  <text class="t" x="40" y="90">Calibration Collapse</text>
+  <text class="s" x="40" y="112">When confidence and accuracy disagree</text>
+
+  <g>
+    <path d="M50 340h380M50 340V140" stroke="#ffffff" stroke-opacity=".14"/>
+    <path d="M50 340L430 140" stroke="#ffffff" stroke-opacity=".3" stroke-dasharray="5 6"/>
+    <rect class="bar" x="58" y="318" width="26" height="22" rx="2"/>
+    <rect class="bar" x="96" y="296" width="26" height="44" rx="2"/>
+    <rect class="bar" x="134" y="272" width="26" height="68" rx="2"/>
+    <rect class="bar" x="172" y="248" width="26" height="92" rx="2"/>
+    <rect class="bar" x="210" y="222" width="26" height="118" rx="2"/>
+    <rect class="bar" x="248" y="198" width="26" height="142" rx="2"/>
+    <rect class="bar" x="286" y="176" width="26" height="164" rx="2"/>
+    <rect class="gap" x="324" y="156" width="26" height="184" rx="2"/>
+    <rect class="bar" x="362" y="146" width="26" height="194" rx="2"/>
+    <rect class="bar" x="400" y="140" width="26" height="200" rx="2"/>
+    <text class="ml" x="50" y="360">CONFIDENCE →</text>
+    <text class="ml" x="352" y="392" fill="#e0839d">GAP</text>
+  </g>
+
+  <text class="m" x="470" y="182">97.8%</text>
+  <text class="ml" x="470" y="198">TEST ACCURACY</text>
+
+  <text class="m" x="470" y="242">4.2%</text>
+  <text class="ml" x="470" y="258">EXPECTED CALIBRATION ERROR</text>
+
+  <text class="m" x="470" y="302">6.1%</text>
+  <text class="ml" x="470" y="318">MAXIMUM CALIBRATION ERROR</text>
+
+  <text class="ml" x="470" y="352">30.5% OF WRONG PREDICTIONS ABOVE 90% CONFIDENCE</text>
+
+  <path d="M40 392h720" stroke="#ffffff" stroke-opacity=".09"/>
+  <text class="ml" x="40" y="418">MNIST · RELIABILITY DIAGRAMS · TECHNICAL PAPER</text>
+  <text class="ml" x="620" y="418">TEMPERATURE SCALING</text>
+</svg>

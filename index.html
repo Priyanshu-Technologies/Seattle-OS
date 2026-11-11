@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#171321">
+  <meta name="description" content="Seattle OS — explore the work, projects, research and engineering journey of Priyanshu Sharma through an interactive desktop environment.">
+  <meta name="author" content="Priyanshu Sharma">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Seattle OS — Priyanshu Sharma">
+  <meta property="og:description" content="An interactive desktop for exploring machine learning, computer vision, RAG systems and computational experiments.">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="manifest" href="site.webmanifest">
+  <title>Seattle OS — Priyanshu Sharma</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preload" href="portfolio.js" as="script">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Priyanshu Sharma",
+    "jobTitle": "Machine Learning & Applied AI Developer",
+    "description": "B.Tech Computer Science (AI & ML) student working across machine learning, computer vision, retrieval-augmented generation, software engineering and computational methods.",
+    "email": "mailto:princesharma99876@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "New Delhi",
+      "addressCountry": "IN"
+    },
+    "sameAs": [
+      "https://github.com/Priyanshu-Technologies",
+      "https://www.linkedin.com/in/priyanshu-sharma-646233394/"
+    ],
+    "knowsAbout": [
+      "Machine Learning",
+      "Computer Vision",
+      "Retrieval-Augmented Generation",
+      "Python",
+      "PyTorch",
+      "FastAPI",
+      "Scientific Computing",
+      "Computational Physics"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <noscript><div style="position:fixed;inset:0;z-index:9999;display:grid;place-items:center;padding:32px;background:#171321;color:#f7f2ff;text-align:center;font:16px system-ui">Seattle OS needs JavaScript enabled to open its desktop. You can still visit <a style="color:#c5a6ed;margin-left:5px" href="https://github.com/Priyanshu-Technologies">Priyanshu’s GitHub profile</a>.</div></noscript>
+  <main id="boot-screen" class="boot-screen">
+    <div class="boot-orbit orbit-one"></div><div class="boot-orbit orbit-two"></div>
+    <div class="boot-content">
+      <div class="boot-brand-mark">✳</div>
+      <div class="boot-wordmark">SEATTLE <span>OS</span></div>
+      <p class="boot-edition">PERSONAL COMPUTING ENVIRONMENT</p>
+      <div class="boot-progress-wrap"><div class="boot-progress-meta"><span>Preparing your workspace</span><span id="boot-percent">4%</span></div><div class="boot-progress"><span id="boot-progress-bar"></span></div></div>
+      <div class="boot-log" id="boot-log"><div class="boot-log-line boot-current">[···] Initializing Seattle core services</div></div>
+      <div class="boot-footer">A little environment for big ideas.</div>
+    </div>
+  </main>
+
+  <main id="desktop-shell" class="desktop-shell theme-aubergine" hidden>
+    <header class="top-panel">
+      <div class="top-panel-left">
+        <button class="panel-brand" id="system-menu-button"><span class="mini-orbit">✳</span> Seattle <span class="chevron">⌄</span></button>
+        <span class="panel-active-app" id="active-app-label">Desktop</span>
+      </div>
+      <button class="panel-clock" id="clock-button"><span id="panel-date"></span><span class="clock-divider">·</span><span id="panel-time"></span></button>
+      <div class="top-panel-right"><button class="panel-status" id="quick-settings-button">◉ <span>▰</span> <span class="chevron">⌄</span></button></div>
+      <div class="panel-popover system-menu" id="system-menu" hidden>
+        <div class="popover-heading">Seattle OS <small>Personal computing environment</small></div>
+        <button data-open-app="settings">⚙️ <span>System settings</span></button>
+        <button id="about-system-button">ⓘ <span>About this environment</span></button>
+      </div>
+      <div class="panel-popover quick-menu" id="quick-menu" hidden>
+        <div class="quick-menu-title">Quick settings</div>
+        <div class="quick-tile"><span>◉</span><div>Workspace<small>Active</small></div></div>
+        <div class="quick-tile"><span>▰</span><div>System status<small>All services ready</small></div></div>
+        <button class="quick-settings-button" data-open-app="settings">Open settings</button>
+      </div>
+      <button class="popover-dismiss" id="popover-dismiss" hidden aria-label="Close menus"></button>
+    </header>
+
+    <section class="desktop-workspace" id="desktop-workspace">
+      <div class="desktop-icons" id="desktop-icons">
+        <button class="desktop-icon" data-open-app="projects"><span class="desktop-icon-art projects-icon">▦</span><span class="desktop-icon-label">Projects</span><span class="desktop-icon-subtitle">Engineering work</span></button>
+        <button class="desktop-icon" data-open-app="files"><span class="desktop-icon-art files-icon">▰</span><span class="desktop-icon-label">Home</span><span class="desktop-icon-subtitle">File manager</span></button>
+        <button class="desktop-icon" data-open-app="terminal"><span class="desktop-icon-art terminal-icon">›_</span><span class="desktop-icon-label">Terminal</span><span class="desktop-icon-subtitle">Command line</span></button>
+        <button class="desktop-icon" data-open-app="about"><span class="desktop-icon-art about-icon">◉</span><span class="desktop-icon-label">About me</span><span class="desktop-icon-subtitle">Developer profile</span></button>
+        <button class="desktop-icon" data-open-app="resume"><span class="desktop-icon-art resume-icon">▤</span><span class="desktop-icon-label">Resume</span><span class="desktop-icon-subtitle">Skills &amp; experience</span></button>
+        <button class="desktop-icon" data-open-app="contact"><span class="desktop-icon-art contact-icon">✉</span><span class="desktop-icon-label">Contact</span><span class="desktop-icon-subtitle">Get in touch</span></button>
+      </div>
+
+      <article class="welcome-widget" id="welcome-widget">
+        <div class="welcome-kicker"><span class="welcome-dot"></span> SEATTLE OS / PERSONAL WORKSPACE</div>
+        <div class="welcome-orbit">✳</div>
+        <h1>Welcome, explorer.</h1>
+        <p>Make yourself at home. Explore projects, discover the engineering behind them, or open a terminal and find your way around. This workspace was created by Priyanshu Sharma and is open for you to explore.</p>
+        <div class="welcome-actions"><button class="welcome-primary" data-open-app="projects">Explore projects <span>↗</span></button><button class="welcome-secondary" data-open-app="terminal"><span>›_</span> Open terminal</button></div>
+        <div class="welcome-footer"><span>⌘ Select an application to get started.</span><span>Seattle OS · 1.0</span></div>
+      </article>
+      <div class="desktop-signature"><span>SEATTLE OS</span><span>BUILT TO EXPLORE</span></div>
+    </section>
+
+    <nav class="dock" id="dock" aria-label="Application dock">
+      <button class="dock-item" data-open-app="about" title="About"><span class="dock-icon about-icon">◉</span><i></i></button>
+      <button class="dock-item" data-open-app="files" title="Files"><span class="dock-icon files-icon">▰</span><i></i></button>
+      <button class="dock-item" data-open-app="projects" title="Projects"><span class="dock-icon projects-icon">▦</span><i></i></button>
+      <button class="dock-item" data-open-app="terminal" title="Terminal"><span class="dock-icon terminal-icon">›_</span><i></i></button>
+      <button class="dock-item" data-open-app="resume" title="Resume"><span class="dock-icon resume-icon">▤</span><i></i></button>
+      <button class="dock-item" data-open-app="contact" title="Contact"><span class="dock-icon contact-icon">✉</span><i></i></button>
+      <span class="dock-separator"></span>
+      <button class="dock-item" data-open-app="settings" title="Settings"><span class="dock-icon settings-icon">⚙</span><i></i></button>
+    </nav>
+  </main>
+  <script src="portfolio.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

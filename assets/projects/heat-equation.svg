@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-label="1D heat equation: temperature profile diffusing along a rod over time with FTCS">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1d1620"/><stop offset="1" stop-color="#332433"/></linearGradient>
+    <radialGradient id="glow" cx=".5" cy=".05" r=".8"><stop offset="0" stop-color="#e6a172" stop-opacity=".24"/><stop offset="1" stop-color="#e6a172" stop-opacity="0"/></radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0v32" fill="none" stroke="#ffffff" stroke-opacity=".04"/></pattern>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/><rect width="800" height="450" fill="url(#grid)"/><rect width="800" height="450" fill="url(#glow)"/>
+  <style>
+    .k{font:500 9px 'DM Mono',monospace;letter-spacing:.22em;fill:#b3a0a2}
+    .t{font:800 29px Manrope,system-ui,sans-serif;fill:#f8f2f0;letter-spacing:-.9px}
+    .s{font:400 11px Manrope,system-ui,sans-serif;fill:#b3a0a2}
+    .ml{font:500 8px 'DM Mono',monospace;letter-spacing:.14em;fill:#9c8b8d}
+    .m{font:800 20px Manrope,system-ui,sans-serif;fill:#f0c6a4}
+  </style>
+  <text class="k" x="40" y="46">SEATTLE OS / COMPUTATIONAL PHYSICS</text>
+  <text class="t" x="40" y="90">1D Heat Equation</text>
+  <text class="s" x="40" y="112">FTCS finite-difference heat diffusion along a rod</text>
+
+  <g>
+    <rect x="80" y="148" width="680" height="24" rx="12" fill="#392b45"/>
+    <rect x="330" y="148" width="180" height="24" rx="12" fill="#e6a172"/>
+    <rect x="80" y="188" width="680" height="24" rx="12" fill="#392b45"/>
+    <rect x="300" y="188" width="240" height="24" rx="12" fill="#e6a172" fill-opacity=".82"/>
+    <rect x="80" y="228" width="680" height="24" rx="12" fill="#392b45"/>
+    <rect x="266" y="228" width="308" height="24" rx="12" fill="#e6a172" fill-opacity=".64"/>
+    <rect x="80" y="268" width="680" height="24" rx="12" fill="#392b45"/>
+    <rect x="232" y="268" width="376" height="24" rx="12" fill="#e6a172" fill-opacity=".46"/>
+    <rect x="80" y="308" width="680" height="24" rx="12" fill="#392b45"/>
+    <rect x="196" y="308" width="448" height="24" rx="12" fill="#e6a172" fill-opacity=".3"/>
+    <rect x="80" y="348" width="680" height="24" rx="12" fill="#392b45"/>
+    <rect x="150" y="348" width="540" height="24" rx="12" fill="#e6a172" fill-opacity=".17"/>
+  </g>
+  <g class="ml">
+    <text x="40" y="165">t0</text><text x="40" y="205">t1</text><text x="40" y="245">t2</text>
+    <text x="40" y="285">t3</text><text x="40" y="325">t4</text><text x="40" y="365">t5</text>
+  </g>
+
+  <text class="m" x="80" y="404">r = αΔt / Δx²</text>
+  <text class="m" x="248" y="404">≤ 0.5</text>
+  <text class="ml" x="340" y="404">VON NEUMANN STABILITY CONDITION</text>
+
+  <path d="M40 388h720" stroke="#ffffff" stroke-opacity=".09"/>
+  <text class="ml" x="600" y="426">NUMPY · MATPLOTLIB</text>
+</svg>

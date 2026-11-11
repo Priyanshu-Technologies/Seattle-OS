@@ -1,0 +1,12 @@
+{
+  "name": "Seattle OS — Priyanshu Sharma",
+  "short_name": "Seattle OS",
+  "description": "Explore projects, research, experience and technical work through an interactive desktop environment.",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#171321",
+  "theme_color": "#171321",
+  "icons": [
+    { "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

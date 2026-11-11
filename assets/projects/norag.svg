@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-label="NORAG retrieval pipeline: question, adaptive router, hybrid retrieval, verification">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#171221"/><stop offset="1" stop-color="#2a2040"/></linearGradient>
+    <radialGradient id="glow" cx=".84" cy=".08" r=".8"><stop offset="0" stop-color="#b79bd9" stop-opacity=".32"/><stop offset="1" stop-color="#b79bd9" stop-opacity="0"/></radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0v32" fill="none" stroke="#ffffff" stroke-opacity=".045"/></pattern>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/><rect width="800" height="450" fill="url(#grid)"/><rect width="800" height="450" fill="url(#glow)"/>
+  <style>
+    .k{font:500 9px 'DM Mono',monospace;letter-spacing:.22em;fill:#a99dbd}
+    .t{font:800 32px Manrope,system-ui,sans-serif;fill:#f6f1fc;letter-spacing:-1px}
+    .s{font:400 12px Manrope,system-ui,sans-serif;fill:#a89cbc}
+    .bx{fill:#ffffff;fill-opacity:.05;stroke:#ffffff;stroke-opacity:.15}
+    .bn{font:700 12px Manrope,system-ui,sans-serif;fill:#e9dff6}
+    .bl{font:500 8px 'DM Mono',monospace;letter-spacing:.14em;fill:#9a8fb0}
+    .m{font:800 21px Manrope,system-ui,sans-serif;fill:#cfb8ec}
+    .ml{font:500 8px 'DM Mono',monospace;letter-spacing:.14em;fill:#8e839f}
+    .tag{font:500 9px 'DM Mono',monospace;letter-spacing:.1em;fill:#b3a2c9}
+  </style>
+  <circle cx="700" cy="70" r="120" fill="none" stroke="#ffffff" stroke-opacity=".07"/>
+  <circle cx="700" cy="70" r="86" fill="none" stroke="#ffffff" stroke-opacity=".05"/>
+  <text class="k" x="40" y="48">SEATTLE OS / RETRIEVAL SYSTEMS</text>
+  <text class="t" x="40" y="94">NORAG</text>
+  <text class="s" x="40" y="118">Modular RAG engine · hybrid retrieval · local-first</text>
+
+  <g>
+    <rect x="40" y="168" width="152" height="66" rx="10" class="bx"/>
+    <text class="bl" x="56" y="190">01 / INPUT</text>
+    <text class="bn" x="56" y="213">Question</text>
+
+    <rect x="210" y="168" width="152" height="66" rx="10" class="bx"/>
+    <text class="bl" x="226" y="190">02 / ROUTER</text>
+    <text class="bn" x="226" y="213">Adaptive route</text>
+
+    <rect x="380" y="168" width="152" height="66" rx="10" fill="#b79bd9" fill-opacity=".14" stroke="#c8abe6" stroke-opacity=".45"/>
+    <text class="bl" x="396" y="190">03 / RETRIEVAL</text>
+    <text class="bn" x="396" y="213">Dense + BM25</text>
+
+    <rect x="550" y="168" width="152" height="66" rx="10" class="bx"/>
+    <text class="bl" x="566" y="190">04 / VERIFY</text>
+    <text class="bn" x="566" y="213">Rerank + cite</text>
+  </g>
+  <g stroke="#b79bd9" stroke-opacity=".55" stroke-width="1.5" fill="none">
+    <path d="M192 201h14"/><path d="M206 197l5 4-5 4"/>
+    <path d="M362 201h14"/><path d="M376 197l5 4-5 4"/>
+    <path d="M532 201h14"/><path d="M546 197l5 4-5 4"/>
+  </g>
+  <text class="tag" x="380" y="252">Reciprocal Rank Fusion · cross-encoder</text>
+
+  <g>
+    <text class="m" x="40" y="312">360+</text><text class="ml" x="40" y="328">TEST FUNCTIONS</text>
+    <text class="m" x="200" y="312">4</text><text class="ml" x="200" y="328">QUERY ROUTES</text>
+    <text class="m" x="360" y="312">100%</text><text class="ml" x="360" y="328">LOCAL EXECUTION</text>
+    <text class="m" x="560" y="312">Recall / MRR / nDCG</text><text class="ml" x="560" y="328">RETRIEVAL EVALUATION</text>
+  </g>
+  <path d="M40 366h720" stroke="#ffffff" stroke-opacity=".09"/>
+  <text class="ml" x="40" y="394">GROUNDED ANSWERS · CITATION VALIDATION · CLAIM VERIFICATION</text>
+  <text class="ml" x="640" y="394">FASTEMBED · OLLAMA · SQLITE</text>
+</svg>

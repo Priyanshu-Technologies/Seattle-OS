@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-label="Heat exchanger regression: noisy sensor readings and predicted temperature fit">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#131b1a"/><stop offset="1" stop-color="#232f2c"/></linearGradient>
+    <radialGradient id="glow" cx=".15" cy=".12" r=".85"><stop offset="0" stop-color="#7fc0a7" stop-opacity=".24"/><stop offset="1" stop-color="#7fc0a7" stop-opacity="0"/></radialGradient>
+    <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse"><path d="M34 0H0v34" fill="none" stroke="#ffffff" stroke-opacity=".05"/></pattern>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/><rect width="800" height="450" fill="url(#grid)"/><rect width="800" height="450" fill="url(#glow)"/>
+  <style>
+    .k{font:500 9px 'DM Mono',monospace;letter-spacing:.22em;fill:#9db5ab}
+    .t{font:800 25px Manrope,system-ui,sans-serif;fill:#f1f7f4;letter-spacing:-.7px}
+    .s{font:400 11px Manrope,system-ui,sans-serif;fill:#9db5ab}
+    .m{font:800 22px Manrope,system-ui,sans-serif;fill:#a8dcc6}
+    .ml{font:500 8px 'DM Mono',monospace;letter-spacing:.14em;fill:#8ea69c}
+    .mm{font:800 15px Manrope,system-ui,sans-serif;fill:#dfeee8}
+  </style>
+  <text class="k" x="40" y="46">SEATTLE OS / INDUSTRIAL ML</text>
+  <text class="t" x="40" y="92">Heat Exchanger Temperature</text>
+  <text class="s" x="40" y="114">Recovering true temperature from noisy sensors</text>
+
+  <rect x="40" y="140" width="360" height="230" rx="10" fill="#ffffff" fill-opacity=".035" stroke="#ffffff" stroke-opacity=".12"/>
+  <g stroke="#ffffff" stroke-opacity=".1"><path d="M40 325h360"/><path d="M40 270h360"/><path d="M40 215h360"/></g>
+  <path d="M52 352L418 158" stroke="#ffffff" stroke-opacity=".22" stroke-dasharray="5 6"/>
+  <path d="M56 356L412 176" stroke="#7fc0a7" stroke-opacity=".9" stroke-width="2.4"/>
+  <g fill="#a8dcc6" fill-opacity=".8">
+    <circle cx="70" cy="344" r="3"/><circle cx="96" cy="338" r="3"/><circle cx="118" cy="330" r="3"/>
+    <circle cx="140" cy="326" r="3"/><circle cx="164" cy="308" r="3"/><circle cx="188" cy="306" r="3"/>
+    <circle cx="210" cy="292" r="3"/><circle cx="232" cy="288" r="3"/><circle cx="256" cy="268" r="3"/>
+    <circle cx="278" cy="262" r="3"/><circle cx="300" cy="252" r="3"/><circle cx="322" cy="238" r="3"/>
+    <circle cx="344" cy="228" r="3"/><circle cx="366" cy="216" r="3"/><circle cx="388" cy="206" r="3"/>
+    <circle cx="120" cy="316" r="2.4"/><circle cx="196" cy="320" r="2.4"/><circle cx="268" cy="248" r="2.4"/>
+    <circle cx="334" cy="248" r="2.4"/><circle cx="376" cy="192" r="2.4"/>
+  </g>
+  <text class="ml" x="56" y="160">PREDICTED</text>
+  <text class="ml" x="330" y="356">SENSOR READING</text>
+
+  <text class="m" x="440" y="186">XGBoost</text>
+  <text class="ml" x="440" y="202">BEST EVALUATED MODEL</text>
+
+  <text class="mm" x="440" y="246">MAE · MSE</text>
+  <text class="mm" x="440" y="272">RMSE · R²</text>
+  <text class="ml" x="440" y="288">FOUR EVALUATION METRICS</text>
+
+  <text class="mm" x="440" y="330">3 models</text>
+  <text class="ml" x="440" y="346">LINEAR · RANDOM FOREST · XGBOOST</text>
+
+  <path d="M40 392h720" stroke="#ffffff" stroke-opacity=".09"/>
+  <text class="ml" x="40" y="418">RESIDUAL ANALYSIS · FEATURE IMPORTANCE · BATCH PREDICTION</text>
+</svg>
